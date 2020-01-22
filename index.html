@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Метод ветвей и границ</h1>
+
+  <div class="wrap">
+   <!-- <div id="data" class="data"></div> -->
+   <div class="tabs">
+    <ul>
+      <li>
+       <input type="radio" name="tabs-0" checked="checked" id="tabs-0-0" />
+          <label for="tabs-0-0">Исходные данные</label>
+       <div>
+        <div id="data" class="data"></div>
+      </div>
+     </li>
+     <li>
+       <input type="radio" name="tabs-0" id="tabs-0-1" />
+         <label for="tabs-0-1">Матрица</label>
+        <div class="table">
+          <table id="matrix"></table>
+        </div>
+      </table>
+      </li>
+    </ul>
+  </div>
+   <canvas id="canvas" width="800" height="600"></canvas>
+   <canvas id="canvas2" width="800" height="600"></canvas>
+  </div>
+
+  <div class="btns">
+    <div class="input__wrapper">
+      <input name="file" type="file" name="file" id="input__file" class="input input__file" onchange="readFile(this)">
+      <label for="input__file" class="input__file-button">
+         <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download2.png" alt="Выбрать файл" width="25"></span>
+         <span class="input__file-button-text">Выберите файл</span>
+      </label>
+   </div>
+    <div id="distribute-btn" class="distribute-btn">Распределить</div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
